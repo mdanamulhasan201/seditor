@@ -1,14 +1,14 @@
 {
   "name": "soditor",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "type": "module",
   "main": "dist/soditor.umd.js",
   "module": "dist/soditor.es.js",
   "types": "dist/types/lib/index.d.ts",
   "homepage": "https://sojebsikder.github.io/soditor",
   "scripts": {
-    "dev": "vite",
-    "build": "tsc && vite build",
+    "dev": "node api.js && vite",
+    "build": "node api.js && tsc && vite build",
     "preview": "vite preview",
     "prepublishOnly": "npm run build && tsc",
     "predeploy": "npm run build",
